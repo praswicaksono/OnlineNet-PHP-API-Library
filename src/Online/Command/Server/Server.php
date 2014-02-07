@@ -141,11 +141,11 @@ class Server extends Online
     }
 
     /**
-     * function bootServeeTest
+     * function bootServerTest
      * @param int $serverId
      * @return mixed
      */
-    public function bootServeeTest($serverId)
+    public function bootServerTest($serverId)
     {
 
         $query = self::buildQuery('/server/boot/test/' . $serverId, 'POST');
