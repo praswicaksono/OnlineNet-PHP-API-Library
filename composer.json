@@ -1,6 +1,7 @@
 {
     "name": "jowy/online",
     "description": "Online.net API library",
+    "license": "MIT",
     "minimum-stability": "stable",
     "authors": [
         {
