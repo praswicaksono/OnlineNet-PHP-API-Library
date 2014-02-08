@@ -56,6 +56,12 @@ class Server extends Online
     public function editServerHostname($serverId, $hostname = 'default')
     {
 
+        self::setHeader(
+            array(
+                'Content-Length: ' . strlen($hostname)
+            )
+        );
+
         $query = self::buildQuery(
             '/server/' . $serverId,
             'PUT',
