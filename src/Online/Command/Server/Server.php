@@ -37,7 +37,7 @@ class Server extends Online
     /**
      * function getServerDetail
      * @param int $serverId
-     * @return mixed
+     * @return string
      */
     public function getServerDetail($serverId)
     {
@@ -51,7 +51,7 @@ class Server extends Online
      * function editServerHostname
      * @param int $serverId
      * @param string $hostname
-     * @return mixed
+     * @return string
      */
     public function editServerHostname($serverId, $hostname = 'default')
     {
@@ -77,7 +77,7 @@ class Server extends Online
      * function createBmcSession
      * @param string $serverId
      * @param string $authorizationIP
-     * @return mixed
+     * @return string
      */
     public function createBmcSession($serverId, $authorizationIP)
     {
@@ -97,7 +97,7 @@ class Server extends Online
     /**
      * function deleteBmcSession
      * @param string $sessionId
-     * @return mixed
+     * @return string
      */
     public function deleteBmcSession($sessionId)
     {
@@ -110,7 +110,7 @@ class Server extends Online
     /**
      * function getBmcSessionDetail
      * @param string $sessionId
-     * @return mixed
+     * @return string
      */
     public function getBmcSessionDetail($sessionId)
     {
@@ -123,7 +123,7 @@ class Server extends Online
     /**
      * function bootServerNormal
      * @param int $serverId
-     * @return mixed
+     * @return string
      */
     public function bootServerNormal($serverId)
     {
@@ -136,7 +136,7 @@ class Server extends Online
     /**
      * function bootServerRescue
      * @param int $serverId
-     * @return mixed
+     * @return string
      */
     public function bootServerRescue($serverId)
     {
@@ -149,7 +149,7 @@ class Server extends Online
     /**
      * function bootServerTest
      * @param int $serverId
-     * @return mixed
+     * @return string
      */
     public function bootServerTest($serverId)
     {
@@ -162,7 +162,7 @@ class Server extends Online
     /**
      * function rebootServer
      * @param int $serverId
-     * @return mixed
+     * @return string
      */
     public function rebootServer($serverId)
     {
@@ -175,7 +175,7 @@ class Server extends Online
     /**
      * function enableHardwareWatch
      * @param int $serverId
-     * @return mixed
+     * @return string
      */
     public function enableHardwareWatch($serverId)
     {
@@ -188,7 +188,7 @@ class Server extends Online
     /**
      * function disableHardwareWatch
      * @param int $serverId
-     * @return mixed
+     * @return string
      */
     public function disableHardwareWatch($serverId)
     {
@@ -201,7 +201,7 @@ class Server extends Online
     /**
      * function getRescueImages
      * @param int $serverId
-     * @return mixed
+     * @return string
      */
     public function getRescueImages($serverId)
     {
@@ -214,7 +214,7 @@ class Server extends Online
     /**
      * function getBackupServer
      * @param int $serverId
-     * @return mixed
+     * @return string
      */
     public function getBackupServer($serverId)
     {
@@ -236,7 +236,7 @@ class Server extends Online
      * @param string $password
      * @param bool $autoLogin
      * @param bool $acl
-     * @return mixed
+     * @return string
      */
     public function editBackupServer($serverId, $password = 'default', $autoLogin = true, $acl = false)
     {
@@ -257,7 +257,7 @@ class Server extends Online
 
     /**
      * function getFailoverIp
-     * @return mixed
+     * @return string
      */
     public function getFailoverIp()
     {
@@ -270,7 +270,7 @@ class Server extends Online
     /**
      * function deleteFailoverMac
      * @param string $failoverIp
-     * @return mixed
+     * @return string
      */
     public function deleteFailoverMac($failoverIp)
     {
@@ -290,7 +290,7 @@ class Server extends Online
      * function editFailoverIp
      * @param string $failoverIp
      * @param string $destination
-     * @return mixed
+     * @return string
      */
     public function editFailoverIp($failoverIp, $destination)
     {
@@ -311,7 +311,7 @@ class Server extends Online
      * function generateMac
      * @param string $failoverIp
      * @param string $type
-     * @return mixed|string
+     * @return string
      */
     public function generateMac($failoverIp, $type)
     {
@@ -337,7 +337,7 @@ class Server extends Online
      * @param string $ip
      * @param string $reverse
      * @param null $destination
-     * @return mixed
+     * @return string
      */
     public function editIp($ip, $reverse, $destination = null)
     {

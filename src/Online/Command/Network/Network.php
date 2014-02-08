@@ -21,7 +21,7 @@ class Network extends Online
      * @param int $count
      * @param int $midId
      * @param int $maxId
-     * @return mixed
+     * @return string
      */
     public function getDdosAlert($targetIp, $count = 10, $midId = 0, $maxId = 10)
     {
@@ -43,7 +43,7 @@ class Network extends Online
     /**
      * function getDdosAlertDetail
      * @param int $alertId
-     * @return mixed
+     * @return string
      */
     public function getDdosAlertDetail($alertId)
     {
