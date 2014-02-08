@@ -71,6 +71,16 @@ class Online
     }
 
     /**
+     * function setHeader
+     * @param array $header
+     */
+    public function setHeader($header = array())
+    {
+
+        $this->auth = array_merge($this->auth, $header);
+    }
+
+    /**
      * function getReqMethod
      * @return mixed
      */
