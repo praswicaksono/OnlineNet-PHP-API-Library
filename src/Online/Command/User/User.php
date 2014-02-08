@@ -18,7 +18,7 @@ class User extends Online
 {
     /**
      * function getUserInfo
-     * @return mixed
+     * @return string
      */
     public function getUserInfo()
     {

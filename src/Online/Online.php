@@ -72,7 +72,7 @@ class Online
 
     /**
      * function setHeader
-     * @param array $header
+     * @param string[] $header
      */
     public function setHeader($header = array())
     {
@@ -82,7 +82,7 @@ class Online
 
     /**
      * function getReqMethod
-     * @return mixed
+     * @return RestClientInterface
      */
     public function getReqMethod()
     {
@@ -102,7 +102,7 @@ class Online
 
     /**
      * function getToken
-     * @return mixed
+     * @return string
      */
     public function getToken()
     {
@@ -222,7 +222,7 @@ class Online
     /**
      * function execQuery
      * @param string $query
-     * @return mixed
+     * @return string
      */
     protected function execQuery($query)
     {

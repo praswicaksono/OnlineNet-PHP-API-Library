@@ -20,7 +20,7 @@ class Abuse extends Online
      * @param int $count
      * @param int $minId
      * @param int $maxId
-     * @return mixed
+     * @return string
      */
     public function getAbuseList($count = 10, $minId = 0, $maxId = 10)
     {
@@ -41,7 +41,7 @@ class Abuse extends Online
     /**
      * function getAbuseDetail
      * @param int $abuseId
-     * @return mixed
+     * @return string
      */
     public function getAbuseDetail($abuseId)
     {
@@ -56,7 +56,7 @@ class Abuse extends Online
      * @param int $abuseId
      * @param string $answer
      * @param string $solution
-     * @return mixed
+     * @return string
      */
     public function replyAbuse($abuseId, $answer, $solution)
     {

@@ -18,7 +18,7 @@ class Storage extends Online
 {
     /**
      * function getRpnRsyncBackup
-     * @return mixed
+     * @return string
      */
     public function getRpnRsyncBackup()
     {
@@ -32,7 +32,7 @@ class Storage extends Online
      * function editRpnRsyncBackup
      * @param string $name
      * @param string $password
-     * @return mixed
+     * @return string
      */
     public function editRpnRsyncBackup($name, $password = 'default')
     {
@@ -51,7 +51,7 @@ class Storage extends Online
 
     /**
      * function getRpnSan
-     * @return mixed
+     * @return string
      */
     public function getRpnSan()
     {
@@ -65,7 +65,7 @@ class Storage extends Online
      * function addServerToRpnSan
      * @param string $iqnSuffix
      * @param int $serverId
-     * @return mixed
+     * @return string
      */
     public function addServerToRpnSan($iqnSuffix, $serverId)
     {
@@ -86,7 +86,7 @@ class Storage extends Online
      * function removeServerInRpnSan
      * @param string $iqnSuffix
      * @param int $serverId
-     * @return mixed
+     * @return string
      */
     public function removeServerInRpnSan($iqnSuffix, $serverId)
     {
