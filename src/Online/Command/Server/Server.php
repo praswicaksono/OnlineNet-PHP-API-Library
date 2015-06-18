@@ -257,19 +257,12 @@ class Server extends Online
 
     /**
      * function getFailoverIp
-     * @param boolean $listFO
      * @return string
      */
-    public function getFailoverIp($listFO = false)
+    public function getFailoverIp($protected)
     {
 
-        $query = self::buildQuery(
-            '/server/failover',
-            'GET',
-            array(
-                'protected' => $listFO,
-            )
-        );
+        $query = self::buildQuery('/server/failover', 'GET', ['protected'=>$protected]);
 
         return self::execQuery($query);
     }
@@ -331,7 +324,7 @@ class Server extends Online
             '/server/failover/generateMac',
             'POST',
             array(
-                'source' => $failoverIp,
+                'address' => $failoverIp,
                 'type' => $type
             )
         );
