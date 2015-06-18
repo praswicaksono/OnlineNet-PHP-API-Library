@@ -343,7 +343,7 @@ class Server extends Online
     {
 
         $query = self::buildQuery(
-            '/server/ip',
+            '/server/ip/edit',
             'POST',
             array(
                 'address' => $ip,
