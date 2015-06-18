@@ -257,12 +257,19 @@ class Server extends Online
 
     /**
      * function getFailoverIp
+     * @param boolean $listFO
      * @return string
      */
-    public function getFailoverIp()
+    public function getFailoverIp($listFO = false)
     {
 
-        $query = self::buildQuery('/server/failover');
+        $query = self::buildQuery(
+            '/server/failover',
+            'GET',
+            array(
+                'protected' => $listFO,
+            )
+        );
 
         return self::execQuery($query);
     }
