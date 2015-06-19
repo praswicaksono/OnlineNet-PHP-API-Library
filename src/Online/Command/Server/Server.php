@@ -262,7 +262,13 @@ class Server extends Online
     public function getFailoverIp($protected)
     {
 
-        $query = self::buildQuery('/server/failover', 'GET', ['protected'=>$protected]);
+        $query = self::buildQuery(
+            '/server/failover', 
+            'GET',
+             array(
+		'protected' => $protected
+	     )
+	);
 
         return self::execQuery($query);
     }
