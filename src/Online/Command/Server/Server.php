@@ -22,16 +22,8 @@ class Server extends Online
      */
     public function getAllServerId()
     {
-
         $query = self::buildQuery('/server');
-        $ids = json_decode(self::execQuery($query));
-
-        foreach ($ids as $id) {
-            $var = explode('/', $id->{'$ref'});
-            $result[] = $var[4];
-        }
-
-        return $result;
+        return self::execQuery($query);
     }
 
     /**
